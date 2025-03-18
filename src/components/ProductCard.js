@@ -10,18 +10,21 @@ function ProductCard({name, image, description}){
 
 const styles={
     card: {
-        border: "3px solid black",
-        borderRadius: "12px",
-        padding: "15px",
+        border: "3px solid gray",
+        borderRadius: "15px",
+        padding: "20px",
         textAlign: "center",
-        width: "400px",
-        margin: "10px",
-        
+        width: "350px",
+        margin: "20px",
+        backgroundColor: "white",
+        boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)", // đổ bóng
     },
     image: {
         width: "100%",
-        borderRadius: "8px",
+        height: "200px",
+        borderRadius: "10px",
+        objectFit: "cover", //cắt ảnh nhưng giữ tỉ lệ
     },
-}
+};
 
 export default ProductCard;
