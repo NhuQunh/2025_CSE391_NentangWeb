@@ -1,9 +1,10 @@
-function ProductCard({name, image, description}){
+
+function ProductCard(props){
     return (
         <div style={styles.card}>
-            <h2>{name}</h2>
-            <img src={image} alt={name} style={styles.image} /> 
-            <p>{description}</p>
+            <h2>{props.name}</h2>
+            <img src={props.image} alt={props.name} style={styles.image} /> 
+            <p>{props.description}</p>
         </div>
     );
 }
